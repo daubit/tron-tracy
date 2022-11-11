@@ -1,0 +1,122 @@
+[
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      "decimals": 6
+    },
+    "address": "THSZcQ7uxMZBLMFgjWgxSwAUr29BFPrJxK"
+  },
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "JUST Stablecoin v1.0",
+      "symbol": "USDJ",
+      "address": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT",
+      "decimals": 18
+    },
+    "address": "TPzpGcfNnwfVbtBn5Gqe7GwHKfj2sq1Yuy"
+  },
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "Decentralized USD",
+      "symbol": "USDD",
+      "address": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+      "decimals": 18
+    },
+    "address": "TMPemg7S2yPgZmVV7a2xB1rWGbWv1tNWUn"
+  },
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "Wrapped TRX",
+      "symbol": "WTRX",
+      "address": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+      "decimals": 6
+    },
+    "address": "TLKhnBHi5vZkJEzMM7nfd3py2F1Bu9Fhuh"
+  },
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+      "decimals": 6
+    },
+    "address": "TG8HeJ5D8ozBVZwtZbPSCoFVtayKawuHQr"
+  },
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "address": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+      "decimals": 8
+    },
+    "address": "TA21W8tFySNtGe9pNajTzX1paXueQFG2Hg"
+  },
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "address": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+      "decimals": 18
+    },
+    "address": "TRQ9A8ScnLxGwQnrFeVULk7Bq8MZ5V34h6"
+  },
+  {
+    "token0": {
+      "name": "SocialSwapToken",
+      "symbol": "SST",
+      "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+      "decimals": 8
+    },
+    "token1": {
+      "name": "Klever",
+      "symbol": "KLV",
+      "address": "TVj7RNVHy6thbM7BWdSe9G6gXwKhjhdNZS",
+      "decimals": 6
+    },
+    "address": "TBwRpGTX8YJcrosRZr5qocLYkcvEbiunxT"
+  }
+]

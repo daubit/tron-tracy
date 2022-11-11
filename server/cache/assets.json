@@ -1,0 +1,51 @@
+{
+  "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe": {
+    "name": "SocialSwapToken",
+    "symbol": "SST",
+    "address": "TBLQs7LqUYAgzYirNtaiX3ixnCKnhrVVCe",
+    "decimals": 8
+  },
+  "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR": {
+    "name": "Wrapped TRX",
+    "symbol": "WTRX",
+    "address": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR",
+    "decimals": 6
+  },
+  "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t": {
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "decimals": 6
+  },
+  "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9": {
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "address": "TN3W4H6rK2ce4vX9YnFQHwKENnHjoxb3m9",
+    "decimals": 8
+  },
+  "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "address": "THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF",
+    "decimals": 18
+  },
+  "TVj7RNVHy6thbM7BWdSe9G6gXwKhjhdNZS": {
+    "name": "Klever",
+    "symbol": "KLV",
+    "address": "TVj7RNVHy6thbM7BWdSe9G6gXwKhjhdNZS",
+    "decimals": 6
+  },
+  "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT": {
+    "name": "JUST Stablecoin v1.0",
+    "symbol": "USDJ",
+    "address": "TMwFHYXLJaRUPeW6421aqXL4ZEzPRFGkGT",
+    "decimals": 18
+  },
+  "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn": {
+    "name": "Decentralized USD",
+    "symbol": "USDD",
+    "address": "TPYmHEhy5n8TCEfYGqW2rPxsghSfzghPDn",
+    "decimals": 18
+  }
+}
+
