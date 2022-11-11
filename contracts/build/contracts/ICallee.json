@@ -1,0 +1,406 @@
+{
+  "contractName": "ICallee",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount0",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "call",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/*! socialswap.router.sol | SPDX-License-Identifier: MIT License */\n\npragma solidity 0.8.6;\n\ninterface ICallee {\n    function call(address sender, uint256 amount0, uint256 amount1, bytes calldata data) external;\n}",
+  "sourcePath": "C:/Dev/daubit/github/tracy-tron/tracy-tron/contracts/contracts/socialswap/interface/ICallee.sol",
+  "ast": {
+    "absolutePath": "/C/Dev/daubit/github/tracy-tron/tracy-tron/contracts/contracts/socialswap/interface/ICallee.sol",
+    "exportedSymbols": {
+      "ICallee": [
+        306
+      ]
+    },
+    "id": 307,
+    "license": "MIT License",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 294,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "69:22:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 306,
+        "linearizedBaseContracts": [
+          306
+        ],
+        "name": "ICallee",
+        "nameLocation": "103:7:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "849f9415",
+            "id": 305,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "call",
+            "nameLocation": "126:4:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 303,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 296,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nameLocation": "139:6:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "131:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 295,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "131:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 298,
+                  "mutability": "mutable",
+                  "name": "amount0",
+                  "nameLocation": "155:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "147:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 297,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 300,
+                  "mutability": "mutable",
+                  "name": "amount1",
+                  "nameLocation": "172:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "164:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 299,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 302,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "196:4:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "181:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 301,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "181:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "130:71:4"
+            },
+            "returnParameters": {
+              "id": 304,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "210:0:4"
+            },
+            "scope": 306,
+            "src": "117:94:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 307,
+        "src": "93:120:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "69:144:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Dev/daubit/github/tracy-tron/tracy-tron/contracts/contracts/socialswap/interface/ICallee.sol",
+    "exportedSymbols": {
+      "ICallee": [
+        306
+      ]
+    },
+    "id": 307,
+    "license": "MIT License",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 294,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "69:22:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 306,
+        "linearizedBaseContracts": [
+          306
+        ],
+        "name": "ICallee",
+        "nameLocation": "103:7:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "849f9415",
+            "id": 305,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "call",
+            "nameLocation": "126:4:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 303,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 296,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nameLocation": "139:6:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "131:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 295,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "131:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 298,
+                  "mutability": "mutable",
+                  "name": "amount0",
+                  "nameLocation": "155:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "147:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 297,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 300,
+                  "mutability": "mutable",
+                  "name": "amount1",
+                  "nameLocation": "172:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "164:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 299,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:7:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 302,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "196:4:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "181:19:4",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 301,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "181:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "130:71:4"
+            },
+            "returnParameters": {
+              "id": 304,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "210:0:4"
+            },
+            "scope": 306,
+            "src": "117:94:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 307,
+        "src": "93:120:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "69:144:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.6+commit.0e36fba0.mod.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2022-11-11T14:29:35.456Z"
+}
