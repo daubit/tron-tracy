@@ -7,7 +7,7 @@ export async function approveRouter(
   adapterAddress: string,
   tokenAddress: string
 ) {
-  const tracyAddress = Tracy.networks[3].address;
+  const tracyAddress = Tracy.networks[9].address;
   const tracy = tronWeb.contract(Tracy.abi, tracyAddress);
   try {
     await tracy
@@ -20,7 +20,7 @@ export async function approveRouter(
 }
 
 export async function approve(tokenAddress: string) {
-  const tracyAddress = Tracy.networks[3].address;
+  const tracyAddress = Tracy.networks[9].address;
   const tracy = tronWeb.contract(Tracy.abi, tracyAddress);
   try {
     await tracy.approve(tokenAddress).send({ shouldPollResponse: true });
@@ -39,7 +39,7 @@ export async function swapExactTokensForTokens(
   const { amounts } = await adapter.getAmountsOut(amount, path).call();
   const deadline = Date.now() + 1000 * 60 * 60;
 
-  const tracyAddress = Tracy.networks[3].address;
+  const tracyAddress = Tracy.networks[9].address;
   const tracy = tronWeb.contract(Tracy.abi, tracyAddress);
   const balanceA = await tracy.balanceIn(path[0]).call();
   console.log({

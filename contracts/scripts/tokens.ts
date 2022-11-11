@@ -16,7 +16,7 @@ export async function getTokens(): Promise<Token[]> {
       const owner = await Token.owner().call();
       token.owner = owner;
     }
-    const wtrxAddress = WTRX.networks[3].address;
+    const wtrxAddress = WTRX.networks[9].address;
     const wtrx = tronWeb.contract(WTRX.abi, wtrxAddress);
     const wtrxName = await wtrx.name().call();
     const wtrxSymbol = await wtrx.symbol().call();

@@ -13,7 +13,7 @@ import { getToken, getTokens } from "../tokens";
  * @returns Promise<string[]> : Array of tron addresses in base58 format
  */
 export async function getPairs(): Promise<Pair[]> {
-  const address = SocialswapFactory.networks[3].address;
+  const address = SocialswapFactory.networks[9].address;
   const instance = await tronWeb.contract().at(address);
   const allPairsLength = await instance.allPairsLength().call();
   console.log(`Fetching from ${allPairsLength} Pairs`);
@@ -58,7 +58,7 @@ export async function getPairs(): Promise<Pair[]> {
 }
 
 export async function createPairs() {
-  const address = SocialswapFactory.networks[3].address;
+  const address = SocialswapFactory.networks[9].address;
   let factory;
   try {
     factory = await tronWeb.contract().at(address);
@@ -105,7 +105,7 @@ export async function fillPairs() {
 }
 
 async function addLiquidity(tokenA: Token, tokenB: Token, amount: number) {
-  const routerAddress = SocialswapRouter.networks[3].address;
+  const routerAddress = SocialswapRouter.networks[9].address;
   const defaultAddress = tronWeb.defaultAddress.hex;
 
   try {
@@ -165,7 +165,7 @@ async function addLiquidity(tokenA: Token, tokenB: Token, amount: number) {
 }
 
 async function addLiquidityTRX(token: Token, amount: number) {
-  const routerAddress = SocialswapRouter.networks[3].address;
+  const routerAddress = SocialswapRouter.networks[9].address;
   const defaultAddress = tronWeb.defaultAddress.hex;
 
   try {
@@ -210,7 +210,7 @@ async function addLiquidityTRX(token: Token, amount: number) {
 
 export async function getAmountsOut(amount: string, tokenPath: string[]) {
   const tokenAmount = tokenPath.length;
-  const routerAddress = SocialswapRouter.networks[3].address;
+  const routerAddress = SocialswapRouter.networks[9].address;
   const router = tronWeb.contract(SocialswapRouter.abi, routerAddress);
   const tokens = await Promise.all(tokenPath.map((token) => getToken(token)));
   const res = await router.getAmountsOut(amount, tokenPath).call();
@@ -224,7 +224,7 @@ export async function getAmountsOut(amount: string, tokenPath: string[]) {
 
 export async function getAmountsIn(amount: string, tokenPath: string[]) {
   const tokenAmount = tokenPath.length;
-  const routerAddress = SocialswapRouter.networks[3].address;
+  const routerAddress = SocialswapRouter.networks[9].address;
   const router = tronWeb.contract(SocialswapRouter.abi, routerAddress);
   const tokens = await Promise.all(tokenPath.map((token) => getToken(token)));
   const res = await router.getAmountsIn(amount, tokenPath).call();

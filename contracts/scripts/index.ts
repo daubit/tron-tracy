@@ -457,7 +457,7 @@ yargs(hideBin(process.argv))
   )
   .command(
     "trade",
-    "trade",
+    "Trade on a pair using the sun/socialswap router",
     (yargs) => {},
     async (args) => {
       await trade();
@@ -465,7 +465,7 @@ yargs(hideBin(process.argv))
   )
   .command(
     "tradeTracy",
-    "tradeTracy",
+    "Trade on a pair using the tracy router",
     (yargs) => {},
     async (args) => {
       await tradeTracy();

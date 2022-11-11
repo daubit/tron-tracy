@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && ts-node ./src/server.ts",
-    "dev": "ts-node ./src/bot.ts",
+    "bot": "ts-node ./src/bot.ts",
     "tracker": "ts-node ./src/tracker.ts",
     "server": "ts-node ./src/server.ts",
     "build": "rimraf ./build && tsc"

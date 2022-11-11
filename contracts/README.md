@@ -1,5 +1,7 @@
 # Tracy Tron
 
+### Please Note that build/ contains the build cache for the contracts deployed to the Nile Testnet.
+
 Requirements:
 
 - Docker
@@ -16,14 +18,16 @@ To view every command run: `npm start -- --help`<br>
 
 ## Setup
 
+- use Replace all ".networks[9]" to select your network. Network 9 is the local node from the docker image
+
 1. Run Tron Quickstart Docker image
 2. Install dependencies: <br>`npm install`
 3. Install tronbox: <br>`npm install -g tronbox`
 4. Install compiler: <br>`tronbox --download-compiler 0.8.6`
 5. Deploy contracts: <br>`tronbox migrate`
 6. Deploy TRC20 contracts: <br>`npm start -- create-tokens`
-7. Create SocialSwap Pairs: <br>`npm start -- create-pairs --sun`
-8. Fill Pairs: <br> `npm start -- fill-pairs --sun`
+7. Create SocialSwap Pairs: <br>`npm start -- create-pairs --all`
+8. Fill Pairs: <br> `npm start -- fill-pairs --all`
 9. Add adapters to TracyRouter: <br> `npm start -- add-adapters`
 
 After `tronbox migrate`, you can also run setup.bat if you are on Windows.

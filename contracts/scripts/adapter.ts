@@ -14,11 +14,11 @@ function getRevertReason(result: string) {
 }
 
 export async function addAdapters() {
-  const socialAddress = SocialswapAdapter.networks[3].address;
-  const sunAddress = SunswapV2Adapter.networks[3].address;
+  const socialAddress = SocialswapAdapter.networks[9].address;
+  const sunAddress = SunswapV2Adapter.networks[9].address;
   const tracy = tronWeb.contract(
     TracyRouter.abi,
-    TracyRouter.networks[3].address
+    TracyRouter.networks[9].address
   );
   try {
     console.log(`add sun adapter from ${sunAddress}`);

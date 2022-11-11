@@ -4,7 +4,7 @@ import SocialswapFactory from "../../build/contracts/SocialswapFactory.json";
 export async function getFactory() {
   const token = await tronWeb.contract(
     SocialswapFactory.abi,
-    SocialswapFactory.networks[3].address
+    SocialswapFactory.networks[9].address
   );
   const feeTo = await token.feeTo().call();
   const balance = await token.allPairsLength().call();

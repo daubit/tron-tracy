@@ -52,7 +52,7 @@ async function swap(
     console.log("sun router");
     const contract = tronWeb.contract(
       SunswapV2Router.abi,
-      SunswapV2Router.networks[3].address
+      SunswapV2Router.networks[9].address
     );
     console.log(
       tokenIn.amount,
@@ -91,7 +91,7 @@ export async function trade() {
   const trc20Tokens = allTokens.filter((token) => token.symbol !== "WTRX");
   const sunRouter = tronWeb.contract(
     SunswapV2Router.abi,
-    SunswapV2Router.networks[3].address
+    SunswapV2Router.networks[9].address
   );
   const sunPairs: Pair[] = (await getSunPairs()).map((pair) => ({
     ...pair,
@@ -113,7 +113,7 @@ export async function trade() {
     shouldPollResponse: true,
   });
   console.log("Minted for TokenB");
-  await token.approve(SunswapV2Router.networks[3].address, amount).send({
+  await token.approve(SunswapV2Router.networks[9].address, amount).send({
     feeLimit: 1e9,
     shouldPollResponse: true,
   });
@@ -146,7 +146,7 @@ export async function trade() {
     Date.now() + 1000 * 60 * 60,
     BigNumber.from("0")
   );*/
-  /*const socialRouter = tronWeb.contract(SocialswapRouter.abi, SocialswapRouter.networks[3].address);
+  /*const socialRouter = tronWeb.contract(SocialswapRouter.abi, SocialswapRouter.networks[9].address);
     const socialPairs = (await getSocialPairs()).map(pair => ({ ...pair, router: Router.Sun }));
     const allPairs: Pair[] = [...sunPairs, ...socialPairs];
     // Trading

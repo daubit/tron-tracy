@@ -55,7 +55,7 @@ async function swap(
     console.log("sun router");
     const contract = tronWeb.contract(
       SunswapV2Router.abi,
-      SunswapV2Router.networks[3].address
+      SunswapV2Router.networks[9].address
     );
     console.log(
       tokenIn.amount,
@@ -107,7 +107,7 @@ export async function tradeTracy() {
   const trc20Tokens = allTokens.filter((token) => token.symbol !== "WTRX");
   const tracyRouter = tronWeb.contract(
     TracyRouter.abi,
-    TracyRouter.networks[3].address
+    TracyRouter.networks[9].address
   );
   const sunPairs: Pair[] = (await getSunPairs()).map((pair) => ({
     ...pair,
@@ -124,13 +124,13 @@ export async function tradeTracy() {
   const amount = BigNumber.from(tokenPair?.tokenBReserve).div(
     BigNumber.from("100")
   );
-  await token.mint(TracyRouter.networks[3].address, amount).send({
+  await token.mint(TracyRouter.networks[9].address, amount).send({
     feeLimit: 1e9,
     shouldPollResponse: true,
   });
   console.log("Minted for TokenB");
   console.log(
-    SunswapV2Adapter.networks[3].address,
+    SunswapV2Adapter.networks[9].address,
     amount,
     0,
     [tokenPair?.tokenB.address, tokenPair?.tokenA.address],
@@ -139,7 +139,7 @@ export async function tradeTracy() {
   try {
     const result1 = await tracyRouter
       .approveRouter(
-        SunswapV2Adapter.networks[3].address,
+        SunswapV2Adapter.networks[9].address,
         tokenPair?.tokenB.address
       )
       .send({ shouldPollResponse: true });
@@ -147,7 +147,7 @@ export async function tradeTracy() {
     console.log("Approved Router");
     const result2 = await tracyRouter
       .swapExactTokensForTokens(
-        SunswapV2Adapter.networks[3].address,
+        SunswapV2Adapter.networks[9].address,
         amount,
         0,
         [tokenPair?.tokenB.address, tokenPair?.tokenA.address],

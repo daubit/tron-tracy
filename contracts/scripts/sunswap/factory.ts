@@ -4,7 +4,7 @@ import SunswapV2Factory from "../../build/contracts/SunswapV2Factory.json";
 export async function getFactory() {
   const token = await tronWeb.contract(
     SunswapV2Factory.abi,
-    SunswapV2Factory.networks[3].address
+    SunswapV2Factory.networks[9].address
   );
   const feeTo = await token.feeTo().call();
   const balance = await token.allPairsLength().call();
